@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView
+        android:id="@+id/tvname"
+        android:text="Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+   <TextView 
+        android:id="@+id/tvemail1"
+        android:text="Email     :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        />
+    
+    <TextView
+        android:id="@+id/tvemail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvemail1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/tvemail1"
+        android:text="email@gmail.com" />
+    
+   
+
+    <TextView
+        android:id="@+id/tvphone1"
+        android:text="Phone Number  :" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemail1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        
+         />
+    
+     <TextView 
+        android:id="@+id/tvphone2"
+        android:text="082121212112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemail2"
+        android:layout_alignBaseline="@+id/tvphone1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/tvphone1"
+        />
+
+    <TextView 
+        android:id="@+id/tvdes"
+        android:text="Tenant Describe :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvphone1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+     <TextView 
+        android:id="@+id/tvdes2"
+        android:text="Describe Your Tenant here, Loren Ipsumm Dolur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

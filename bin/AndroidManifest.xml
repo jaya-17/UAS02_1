@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uas02_1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission 
+	    android:name="android.permission.INTERNET"/>
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Simple ePayment"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.uas02_1.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.admin"
+            android:label="Enter As Admin"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.tambah_tenant"
+            android:label="Enter As Admin"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.tambah_member"
+            android:label="Add Member"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.detail_tenant"
+            android:label="detail Tenant"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+         <activity
+            android:name="com.example.uas02_1.edit_tenant"
+            android:label="Edit Tenant"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.detail_member"
+            android:label="Edit Tenant"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.example.uas02_1.edit_member"
+            android:label="Edit Member"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.uas02_1.MainActivity" />
+        </activity>
+        
+    </application>
+
+</manifest>

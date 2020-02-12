@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsignuptenantxxhdpi" >
+
+    <EditText
+        android:id="@+id/etnamaaddtenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="113dp"
+        android:hint="Enter Your Name"
+         />   
+    
+    
+    <EditText
+        android:id="@+id/etemailaddtenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnamaaddtenant"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:hint="Enter Your Email"
+         />   
+    
+    
+    <EditText
+        android:id="@+id/etnumberaddtenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etemailaddtenant"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:hint="Enter Number"
+        />   
+        
+    <EditText
+        android:id="@+id/etpasswordaddtenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnumberaddtenant"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+         />   
+         
+    <Button 
+        android:id="@+id/btnsavetenant"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:layout_below="@+id/etpasswordaddtenant"
+        android:layout_marginTop="17.5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save Tenant"
+        android:textColor="#fff"
+        />
+    
+    
+</RelativeLayout>

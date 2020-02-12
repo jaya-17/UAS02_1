@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+    <TextView
+        android:id="@+id/tvname"
+        android:text="Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+   <TextView 
+        android:id="@+id/tvemail1"
+        android:text="Email     :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        />
+    
+    <TextView
+        android:id="@+id/tvemail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvemail1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/tvemail1"
+        android:text="email@gmail.com" />
+    
+   
+
+    <TextView
+        android:id="@+id/tvphone1"
+        android:text="Phone Number  :" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemail1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        
+         />
+    
+     <TextView 
+        android:id="@+id/tvphone2"
+        android:text="082121212112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvemail2"
+        android:layout_alignBaseline="@+id/tvphone1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/tvphone1"
+        />
+     
+     <TextView 
+        android:id="@+id/tvbalance1"
+        android:text="Current balance :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvphone1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+     
+     <TextView 
+        android:id="@+id/tvbalance2"
+        android:text="10000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvphone2"
+        android:layout_alignBaseline="@+id/tvbalance1"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/tvbalance1"
+        />
+     
+        
+
+    <TextView 
+        android:id="@+id/tvdes"
+        android:text="Tenant Describe :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvbalance1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+     <TextView 
+        android:id="@+id/tvdes2"
+        android:text="Describe Your Tenant here, Loren Ipsumm Dolur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdes"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:textSize="16sp"
+        />
+     
+     <RelativeLayout 
+         android:layout_below="@+id/tvdes2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg_border"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="40dp"
+    android:padding="15dp"
+    >
+     <TextView 
+        android:id="@+id/tvamount"
+        android:text="Amount :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        />
+        
+     <EditText
+        android:id="@+id/etamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"     
+        android:layout_marginLeft="120dp"
+        android:layout_alignBaseline="@+id/tvamount"
+        android:ems="8" >
+     </EditText>
+     
+     
+         
+	<Button 
+        android:id="@+id/btntopup"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etamount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custombtn"
+        android:text="Top Up"
+        android:textColor="#fff"
+        android:typeface="sans"
+        android:ems="10"
+        />
+     
+     
+     
+     
+     </RelativeLayout>
+
+</RelativeLayout>

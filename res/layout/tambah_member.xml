@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgsignupmemberxxhdpi" >
+
+    
+    
+    <EditText
+        android:id="@+id/etnamaaddmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="113dp"
+        android:hint="Enter Your Name"
+         /> 
+         
+     <EditText
+        android:id="@+id/ethpaddmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etnamaaddmember"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:hint="Enter Phone Number"
+         /> 
+         
+     <EditText
+        android:id="@+id/etemailaddmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ethpaddmember"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:hint="Enter Your Email"
+         />
+     
+     <EditText
+        android:id="@+id/etpasswordaddmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etemailaddmember"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:inputType="textPassword"
+        android:hint="Enter Balance"
+        />  
+         
+     <EditText
+        android:id="@+id/etconfpasswordaddmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpasswordaddmember"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="17.5dp"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        /> 
+        
+     <Button 
+        android:id="@+id/btnsavemember"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custombtn"
+        android:layout_below="@+id/etconfpasswordaddmember"
+        android:layout_marginTop="17.5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Save Member"
+        android:textColor="#fff"
+        />
+     
+</RelativeLayout>
